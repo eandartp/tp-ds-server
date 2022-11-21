@@ -16,6 +16,7 @@ public class EmployeeDto implements Serializable {
     private Long id;
     private String firstName;
     private String lastName;
+    private String taxCode;
     private String address;
     private String zip;
     private String city;

@@ -17,6 +17,7 @@ public class EmployeeMapper implements Serializable {
         employee.setId(employeeDto.getId());
         employee.setFirstName(employeeDto.getFirstName());
         employee.setLastName(employeeDto.getLastName());
+        employee.setTaxCode(employeeDto.getTaxCode());
         employee.setAddress(employeeDto.getAddress());
         employee.setZip(employeeDto.getZip());
         employee.setCity(employeeDto.getCity());
@@ -29,9 +30,10 @@ public class EmployeeMapper implements Serializable {
         employeeDto.setId(employee.getId());
         employeeDto.setFirstName(employee.getFirstName());
         employeeDto.setLastName(employee.getLastName());
+        employeeDto.setTaxCode(employee.getTaxCode());
         employeeDto.setAddress(employee.getAddress());
-        employeeDto.setZip(employeeDto.getZip());
-        employeeDto.setCity(employeeDto.getCity());
+        employeeDto.setZip(employee.getZip());
+        employeeDto.setCity(employee.getCity());
         return employeeDto;
     }
 }
